@@ -12,3 +12,5 @@ console.log(baseName)
 // get the absolute path (for when your app runs in different environments)
 const absolute = path.resolve(__dirname,'content','subfolder','test.txt')
 console.log(absolute)
+
+// testing commit on new m2 mac
