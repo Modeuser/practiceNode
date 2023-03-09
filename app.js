@@ -26,3 +26,5 @@ readFile('./content/first.txt', 'utf8', (err, result) => {
         })
     })
 })
+
+// commit via terminal
