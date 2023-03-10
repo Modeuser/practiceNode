@@ -12,3 +12,7 @@ const second = readFileSync('./content/second.txt','utf8')
 writeFileSync('./content/result-sync.txt',`Here is the result : ${first}, ${second}`)
 // if you only need to append
 writeFileSync('./content/result-sync.txt',`Here is the result : ${first}, ${second}`, {flag: 'a'})
+
+// In "sync" if there are multiple users on your website, then each
+// process must be completed before the next user's request is taken
+// this is the issue with "sync"
