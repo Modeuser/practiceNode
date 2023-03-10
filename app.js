@@ -1,19 +1,21 @@
-const http = require('http')
+// npm commands
+// --version
 
-// req = incoming request | res = what we send back
-const server = http.createServer((req,res)=>{
-    if (req.url === '/'){
-        res.end('welcome to my homepage')
-    }
-    if (req.url === '/about'){
-        res.end('this is the about page')
-    }
-    // tutorial didn't do anything to handle the error here
-    res.end(`
-    <h1>Welp!</h1>
-    <p>Page does not exist</p>
-    <a href="/">back home</a>`)
-})
+// npm install locally
+//  npm i <package name>
 
-//what ports are we listening to
-server.listen(5012)
+// npm install globally to be used in all projects
+//  npm install -g <package name>
+//  sudo install -g <package name> (super user on mac)
+
+// package.json
+//  stores information about the project packages
+// quick npm setup
+//  npm init (step by step)
+//  npm init -y (everything default)
+
+const _ = require('lodash')
+
+const items = [1,[2,[3,[4]]]]
+const newItems = _.flattenDeep(items)
+console.log(newItems)
