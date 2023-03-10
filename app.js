@@ -27,4 +27,4 @@ readFile('./content/first.txt', 'utf8', (err, result) => {
     })
 })
 
-//testing sshkey usage
+//testing sshkey usage via mac terminal
