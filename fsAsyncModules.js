@@ -27,5 +27,5 @@ readFile('./content/first.txt', 'utf8', (err, result) => {
     })
 })
 
-// In "Async" node can off-load the first request, to handle a newer request
+// In "Async" node can off-load the first request, to handle more immediate request
 // This is the main benefit of "async"
